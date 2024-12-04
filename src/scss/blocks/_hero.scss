@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+    background-color: #FDFBEA;
+    margin: 0 30px;
+
+    &__image {
+        position: relative;
+        padding: 10px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+        text-align: right;
+        max-width: 40%;
+        padding: 20px;
+        border-radius: 5px;
+        color: #56593D;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 30px;
+        z-index: 10;
+
+        .btn {
+            &--primary {
+                font-size: 16px;
+                background-color: #56593D;
+                color: #ffffff;
+                font-family: 'Gilroy', sans-serif;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover {
+                    background-color: #FBD784;
+                    color: #56593D;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        position: relative;
+        display: flex;
+        justify-content: center;  
+        align-items: flex-start;  
+        text-align: right;
+
+        &__content {
+            position: relative;    
+            right: 10px;           
+            max-width: 90%;        
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.essential {
+    position: relative;
+    background-color: #FDFBEA;
+    margin: 20px 30px;
+
+    &__image {
+        position: relative;
+        padding: 10px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        text-align: center;
+        max-width: 110%;
+        border-radius: 5px;
+        color: #56593D;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .essential {
+        position: relative;
+        display: flex;
+        justify-content: center;  
+        align-items: flex-start;  
+        text-align: right;
+
+        &__content {
+            position: relative;    
+            max-width: 100%;  
+            font-size: 24px;      
+        }
+    }
+}

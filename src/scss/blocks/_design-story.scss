@@ -1,0 +1,54 @@
+.design-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDFBEA; 
+    padding: 60px;
+    gap: 40px; 
+    margin: 0 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__image {
+        flex: 1;
+        img {
+            width: 90%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        max-width: 500px;
+
+        h3 {
+            font-size: 40px;
+            color: #56593D;
+            position: relative;
+            padding-bottom: 20px;
+            text-align: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40px;
+                height: 1px;
+                background-color: #56593D;
+            }
+        }
+
+        p {
+            font-size: 24px;
+            color: #56593D;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+    }
+}

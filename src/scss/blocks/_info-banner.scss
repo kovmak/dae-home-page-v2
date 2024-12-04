@@ -1,0 +1,45 @@
+.info-banner {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 30px;
+
+    &__text {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 48px;
+        color: #56593D;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__link {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 16px;
+        color: #56593D;
+        text-decoration: none;
+        border-bottom: 1px solid #56593D;
+        padding-bottom: 5px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #FBD784;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .info-banner__text {
+        font-size: 20px;
+    }
+
+    .info-banner__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

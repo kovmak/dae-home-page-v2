@@ -1,0 +1,24 @@
+@import 'config';
+@import 'blocks/navbar';
+@import 'blocks/hero';
+@import 'blocks/info-banner';
+@import 'blocks/products';
+@import 'blocks/essential';
+@import 'blocks/design-story';
+@import 'blocks/table-time';
+@import 'blocks/newsletter-section';
+@import 'blocks/moments';
+@import 'blocks/footer';
+
+::-webkit-scrollbar {
+    width: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FBD784; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FDFBEA; 
+}
